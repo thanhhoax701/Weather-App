@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày tháng"
+        android:id="@+id/textViewNgay"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textViewTrangthai"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:gravity="left"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/android"
+            android:id="@+id/imageViewTrangthai"
+            android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/textViewMinTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Min Temp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/textViewIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text=" / "
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewMaxTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Max Temp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
